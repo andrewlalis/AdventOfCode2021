@@ -9,11 +9,7 @@ void slidingSum() {
     int increaseCount = 0;
     foreach (i; 1 .. (values.length - 2)) {
         int currentSum = values[i] + values[i + 1] + values[i + 2];
-        bool increase = false;
-        if (currentSum > previousSum) {
-            increaseCount++;
-            increase = true;
-        }
+        if (currentSum > previousSum) increaseCount++;
         previousSum = currentSum;
     }
     writefln("%d", increaseCount);
