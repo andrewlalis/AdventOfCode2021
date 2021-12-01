@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"Andrew Lalis"
+	],
+	"copyright": "Copyright © 2021, Andrew Lalis",
+	"description": "Advent of Code 2021 attempts.",
+	"license": "MIT",
+	"name": "adventofcode2021"
+}
