@@ -1,4 +1,4 @@
-module day2.part1;
+module day2.part1and2;
 
 import std.file;
 import std.stdio;
