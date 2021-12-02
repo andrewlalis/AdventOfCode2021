@@ -5,12 +5,17 @@ import std.stdio;
 import std.string;
 import std.conv;
 import std.typecons;
+import std.traits;
 
-Tuple!(string, int) parseOp(char[] op) {
+/** 
+ * Parses a submarine instruction.
+ * Params:
+ *   op = The operation to parse.
+ * Returns: A tuple containing the operation string and the value.
+ */
+Tuple!(string, int) parseOp(S)(S op) @safe pure if (isSomeString!S) {
     auto parts = op.split();
-    int x = parts[1].to!int;
-    string d = parts[0].to!string;
-    return tuple(d, x);
+    return tuple(parts[0].to!string, parts[1].to!int);
 }
 
 void dive() {
