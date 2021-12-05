@@ -1,7 +1,7 @@
 import std.stdio;
 
-import day4.part1and2;
+import day5.part1;
 
 void main() {
-	bingo();
+	hydrothermalVents();
 }
