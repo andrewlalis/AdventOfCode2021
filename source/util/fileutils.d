@@ -12,9 +12,10 @@ import std.conv;
  *   filename = The name of the file to read, relative to the working dir.
  * Returns: A list of integers.
  */
-int[] readInts(string filename) {
-    return readText("source/day1/input.txt")
-        .split("\n")
+int[] readInts(string filename, string sep = "\n") {
+    return readText(filename)
+        .strip()
+        .split(sep)
         .map!(s => s.strip())
         .filter!(s => s.length > 0)
         .map!(s => s.to!int)

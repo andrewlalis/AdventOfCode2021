@@ -1,7 +1,7 @@
 import std.stdio;
 
-import day6.part1;
+import day7.part1;
 
 void main() {
-	lanternFish();
+	crabFuel();
 }
