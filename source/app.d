@@ -1,7 +1,7 @@
 import std.stdio;
 
-import day7.part1;
+import day8.part1;
 
 void main() {
-	crabFuel();
+	sevenSegmentSearch();
 }
