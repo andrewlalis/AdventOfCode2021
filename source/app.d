@@ -1,7 +1,7 @@
 import std.stdio;
 
-import day8.part1;
+import day9.part1;
 
 void main() {
-	sevenSegmentSearch();
+	lavaTubes();
 }
