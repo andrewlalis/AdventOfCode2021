@@ -1,7 +1,7 @@
 import std.stdio;
 
-import day9.part1;
+import day10.part1;
 
 void main() {
-	lavaTubes();
+	syntaxChecker();
 }
