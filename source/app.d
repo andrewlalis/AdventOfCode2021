@@ -1,7 +1,7 @@
 import std.stdio;
 
-import day11.part1;
+import day12.part1;
 
 void main() {
-	dumboOctopus();
+	passagePathing();
 }
